@@ -1,0 +1,441 @@
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: fit-content;
+}
+.header {
+    position: fixed;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    border-bottom: 1px solid darkgray;
+    z-index: 99;
+}
+.header .fade-screen {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+}
+.header .alt-nav {
+    position: absolute;
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: 5px 0px;
+    z-index: 100;
+}
+.alt-nav > button{
+    width: 30px;
+    height: 60px;
+    z-index: 101;
+}
+.alt-nav button {
+    position: absolute;
+    border: none;
+    background: transparent;
+}
+.alt-nav .alt-nav-bar {
+    position: fixed;
+    top: 0px;
+    padding-top: 70px;
+    left: 0px;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    padding-left: 40px;
+    border-right: 1px solid darkgray;
+    transform: translateX(-250px);
+    animation-duration: 0.6s;
+}
+.alt-nav-bar a {
+    position: relative;
+    height: 20px;
+    margin: 10px 0px;
+}
+
+.header .logo {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.logo a {
+    height: 100%;
+    padding-left: 25px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.logo img {
+    height: 40px;
+}
+.logo .logo-name {
+    padding-left: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16pt;
+    font-weight: 400;
+    font-stretch: ultra-condensed;
+}
+.logo a:hover{
+    color: gray;
+}
+.header .navigation {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 20px;
+}
+.navigation a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+.navigation a button {
+    width: 100%;
+    height: 100%;
+    padding: 0px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+    border: none;
+    background-color: white;
+}
+.navigation a button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* BODY */
+.body {
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+/* .body .introduction */
+.body .introduction {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+.introduction .intro-img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/thumbnail.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.introduction .intro-brief {
+    position: relative;
+    width: 100%;
+    background-color: rgba(253,216,53,1);
+    padding: 30px 8px;
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* .body .content */
+.body .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.content hr {
+    position: relative;
+    margin-top: 40px;
+}
+/* .content .intro */
+.content .intro-content {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+.content .committee {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+.content .committee p {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin: 20px 0px;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.content .committee .committee-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url("img/committee-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* .content .act */
+.content .act {
+    position: relative;
+}
+.act .act-title {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin: 20px 0px;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.act .activities div {
+    position: relative;
+    padding: 0px;
+}
+.act .activities img {
+    position: relative;
+    padding: 0px 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.act .activities p {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0px;
+}
+/* .content .act-5k */
+.content .act-5k {
+    position: relative;
+}
+.act-5k .act-5k-title {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin: 20px 0px;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.act-5k .act-5k-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 40px;
+}
+.act-5k .act-5k-content img {
+    position: relative;
+    padding: 0px 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 266px;
+    object-fit: cover;
+}
+.act-5k .activities-5k p {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 12pt;
+    text-align: center;
+    padding: 12px 0px;
+}
+/* .content .act-child */
+.content .act-child {
+    position: relative;
+}
+.act-child .activities-child {
+    position: relative;
+    width: 100%;
+}
+.act-child .act-child-title {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin: 20px 0px;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.act-child .act-child-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 40px;
+}
+.act-child .act-child-content img {
+    position: relative;
+    padding: 0px 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 266px;
+    object-fit: cover;
+}
+.act-child .activities-child p {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 12pt;
+    text-align: center;
+    padding: 12px 0px;
+}
+/* .content .other-act */
+.content .other-act {
+    position: relative;
+}
+.other-act .other-activities {
+    position: relative;
+    width: 100%;
+}
+.other-act .other-act-title {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin: 20px 0px;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.other-act .other-act-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 40px;
+}
+.other-act .other-act-content img {
+    position: relative;
+    padding: 0px 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 266px;
+    object-fit: cover;
+}
+.other-act .other-activities p {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 12pt;
+    text-align: center;
+    padding: 12px 0px;
+}
+/* .content .others */
+.content .others {
+    position: relative;
+    padding: 0px;
+    margin-top: 60px;
+    height: fit-content;
+}
+.others img {
+    position: relative;
+    padding: 0px 20px;
+}
+.others p {
+    position: relative;
+    margin: 0px;
+    margin-bottom: 16px !important;
+    padding: 0px 20px !important;
+    width: auto !important;
+    font-size: 24pt !important;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+}
+
+
+
+
+.footer {
+    position: relative;
+    margin-top: 30px;
+    width: 100vw;
+    height: fit-content;
+    background-color: rgba(244,244,244,1);
+    padding: 20px 0px;
+    font-size: 10pt;
+}
+.footer span {
+    font-weight: bold;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover {
+    color: gray;
+}
+
+/* RESPONSVE */
+@media only screen and (max-width: 992px) {
+    .header {
+        border: none;
+    }
+    .header .logo-name, .header .navigation {
+        display: none !important;
+    }
+    .header > button:first-child {
+        display: block;
+    }
+    .header .logo {
+        transform: translateX(30px);
+    }
+    .header .alt-nav {
+        display: flex;
+    }
+}
+@keyframes slideIn {
+    from {
+        visibility: hidden;
+        transform: translateX(-250px);
+    }
+    to {
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}
+@keyframes slideOut {
+    from {
+        visibility: visible;
+        transform: translateX(0px);
+    }
+    to {
+        visibility: hidden;
+        transform: translateX(-250px);
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .body .introduction .intro-brief p {
+        font-size: 12pt;
+        line-height: 1.6;
+    }
+}
